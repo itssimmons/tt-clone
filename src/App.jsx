@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
+import FeedVideos from './components/FeedVideos/index'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App () {
   return (
-    <div className="App">
-      hello world!
+    <div className='App'>
+      <main>
+        <FeedVideos />
+      </main>
     </div>
   )
 }
