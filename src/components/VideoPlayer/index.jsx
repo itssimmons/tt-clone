@@ -2,19 +2,21 @@ import { useRef, useState } from 'react'
 import styles from './styles.module.css'
 import clsx from 'clsx'
 
-export default function VideoPlayer ({src}) {
+import PlayerActions from './PlayerActions'
+
+export default function VideoPlayer ({ src }) {
   const [playing, setPlaying] = useState(false)
   const video = useRef(null)
 
   const handlePlay = () => {
-  	const { current: videoElement } = video
+    const { current: videoElement } = video
     playing ? videoElement.pause() : videoElement.play()
 
     setPlaying(!playing)
   }
 
   const playerClassName = clsx(styles.player, {
-  	[styles.hidden]: playing
+    [styles.hidden]: playing
   })
 
   return (
@@ -28,6 +30,7 @@ export default function VideoPlayer ({src}) {
         onClick={handlePlay}
       />
       <i className={playerClassName} onClick={handlePlay} />
+      <PlayerActions />
     </div>
   )
 }
