@@ -2,11 +2,11 @@
   "name": "tistos",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite serve --port 3000",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "co": "sui-mono commit",
-    "lint:all": "concurrently \"yarn pretty\" \"yarn lint:fix\"",
+    "fix": "concurrently \"yarn pretty\" \"yarn lint:fix\"",
     "pretty": "prettier --write .",
     "lint": "standard",
     "lint:fix": "standard --fix"
