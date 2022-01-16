@@ -18,7 +18,8 @@
 
 body {
   margin: 0;
-  font-family: 'Proxima Nova',Arial,Tahoma,PingFangSC,sans-serif,"Segoe UI Emoji","Noto Emoji";
+  font-family: 'Proxima Nova', Arial, Tahoma, PingFangSC, sans-serif,
+    'Segoe UI Emoji', 'Noto Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,8 +29,6 @@ html {
 }
 
 *,
-*:before
-*:after {
+*:before *:after {
   box-sizing: inherit;
 }
-

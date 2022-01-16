@@ -8,11 +8,10 @@
 }
 
 main {
+  height: auto;
   aspect-ratio: 9/16;
   border-radius: 8px;
   overflow-y: scroll;
-  width: 375px;
-  height: auto;
-  scroll-snap-type: y mandatory;          
+  scroll-snap-type: y mandatory;
   display: block;
 }

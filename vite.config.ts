@@ -8,5 +8,5 @@ export default defineConfig({
     jsxFragment: '_jsxFragment',
     jsxInject: `import { createElement as _jsx, Fragment as _jsxFragment } from 'react'`,
   },
-  plugins: [react()]
+  plugins: [react()],
 })
