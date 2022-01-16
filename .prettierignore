@@ -1,0 +1,15 @@
+# Folders
+coverage
+build
+public
+# Config Files
+tsconfig.json
+package.json
+yarn.lock
+.prettierignore
+.prettierrc.yaml
+# Unnecessary format
+src/components/Icons/*
+src/vite-env.d.ts
+vite.config.ts
+index.html
