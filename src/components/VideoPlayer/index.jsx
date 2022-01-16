@@ -3,8 +3,9 @@ import styles from './styles.module.css'
 import clsx from 'clsx'
 
 import PlayerActions from './PlayerActions'
+import VideoDescription from '../VideoDescription/index'
 
-export default function VideoPlayer ({ src }) {
+export default function VideoPlayer ({ author, description, albumCover, src }) {
   const [playing, setPlaying] = useState(false)
   const video = useRef(null)
 
@@ -31,6 +32,11 @@ export default function VideoPlayer ({ src }) {
       />
       <i className={playerClassName} onClick={handlePlay} />
       <PlayerActions />
+      <VideoDescription 
+        albumCover={albumCover}
+        author={author}
+        description={description}
+      />
     </div>
   )
 }

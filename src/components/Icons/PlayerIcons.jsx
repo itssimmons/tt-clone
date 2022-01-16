@@ -1,12 +1,12 @@
-export const Heart = ({ fill = 'currentColor' }) => (
-  <svg width='56' height='56' viewBox='8 8 40 40' fill='none'>
-    <path
-      fillRule='evenodd'
-      clipRule='evenodd'
-      d='M20.5 11.75C25.5 11.75 28 15.0833 28 15.0833C28 15.0833 30.5 11.75 35.5 11.75C41.3333 11.75 45.5 16.3333 45.5 22.1667C45.5 28.8333 40.0518 34.7762 35.0833 39.25C32.0159 42.012 29.6667 43.8333 28 43.8333C26.3333 43.8333 23.9175 41.9982 20.9167 39.25C16.0325 34.7771 10.5 28.8333 10.5 22.1667C10.5 16.3333 14.6667 11.75 20.5 11.75Z'
-      fill={fill}
-      className='jsx-921695137'
-    />
+export const Heart = (props) => (
+  <svg
+    width={40}
+    height={40}
+    viewBox='8 8 40 40'
+    fill='none'
+    {...props}
+  >
+    <path fillRule='evenodd' clipRule='evenodd' d='M20.5 11.75C25.5 11.75 28 15.0833 28 15.0833C28 15.0833 30.5 11.75 35.5 11.75C41.3333 11.75 45.5 16.3333 45.5 22.1667C45.5 28.8333 40.0518 34.7762 35.0833 39.25C32.0159 42.012 29.6667 43.8333 28 43.8333C26.3333 43.8333 23.9175 41.9982 20.9167 39.25C16.0325 34.7771 10.5 28.8333 10.5 22.1667C10.5 16.3333 14.6667 11.75 20.5 11.75Z' />
   </svg>
 )
 
@@ -16,7 +16,6 @@ export const Comment = (props) => (
     height={40}
     viewBox='0 0 48 48'
     fill='none'
-    xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
     <g opacity={0.9} filter='url(#a)'>
@@ -76,7 +75,6 @@ export const Share = (props) => (
     height={40}
     viewBox='0 0 48 48'
     fill='none'
-    xmlns='http://www.w3.org/2000/svg'
     {...props}
   >
     <g opacity={0.9} filter='url(#a)'>
@@ -95,11 +93,11 @@ export const Share = (props) => (
       fill='#161823'
     />
     <path
-      opacity={0.09}
+      opacity={0}
       fillRule='evenodd'
       clipRule='evenodd'
       d='M25.8 16.839v15.6s-14.289-2.014-18.764 4.8c-4.306 6.556-3.91-7.404 2.572-14.356S25.8 16.839 25.8 16.839Z'
-      fill='url(#b)'
+      fill='#fff'
     />
     <defs>
       <radialGradient
