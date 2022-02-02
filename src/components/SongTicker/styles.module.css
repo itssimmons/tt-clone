@@ -1,0 +1,30 @@
+.song {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	overflow: hidden;
+}
+
+.songName {
+	padding-right: 20px;
+	white-space: nowrap;
+	animation: ticker 5s infinite linear;
+}
+
+.ticker {
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+	margin-left: 15px;
+	width: max-content;
+}
+
+@keyframes ticker {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
