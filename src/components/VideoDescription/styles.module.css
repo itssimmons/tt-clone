@@ -1,5 +1,5 @@
 .album {
-	animation: rotate 4s infinite linear;
+	animation: rotate 4s infinite linear paused;
 	background: url('assets/album.svg');
 	border-radius: 100%;
 	width: 50px;
@@ -7,6 +7,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.albumRunning {
+	animation: rotate 4s infinite linear running;
 }
 
 .albumImage {

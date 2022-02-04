@@ -1,9 +1,8 @@
-import { useRef, useState } from 'react'
-import styles from './styles.module.css'
 import clsx from 'clsx'
-
-import PlayerActions from './PlayerActions'
+import { useRef, useState } from 'react'
 import VideoDescription from '../VideoDescription/index'
+import PlayerActions from './PlayerActions'
+import styles from './styles.module.css'
 
 export default function VideoPlayer ({ author, description, albumCover, songName, src }) {
   const [playing, setPlaying] = useState(false)
@@ -12,7 +11,6 @@ export default function VideoPlayer ({ author, description, albumCover, songName
   const handlePlay = () => {
     const { current: videoElement } = video
     playing ? videoElement.pause() : videoElement.play()
-
     setPlaying(!playing)
   }
 
@@ -37,6 +35,7 @@ export default function VideoPlayer ({ author, description, albumCover, songName
         author={author}
         description={description}
         songName={songName}
+        animate={playing}
       />
     </div>
   )

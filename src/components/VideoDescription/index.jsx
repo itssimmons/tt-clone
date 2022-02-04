@@ -1,8 +1,9 @@
 import AlbumDisk from './AlbumDisk'
 import SongTicker from '../SongTicker'
 import styles from './styles.module.css'
+import clsx from 'clsx'
 
-export default function VideoDescription({author, description, albumCover, songName}) {
+export default function VideoDescription({author, description, albumCover, songName, animate}) {
 	return (
 		<footer className={styles.description}>
 			<div className={styles.textWrapper}>
@@ -17,10 +18,10 @@ export default function VideoDescription({author, description, albumCover, songN
 				<p className={styles.text}>
 					{description}
 				</p>
-				<SongTicker songName={songName} />
+				<SongTicker songName={songName} animate={animate} />
 			</div>
 			<div>
-				<AlbumDisk albumCover={albumCover} />
+				<AlbumDisk albumCover={albumCover} animate={animate} />
 			</div>
 		</footer>
 	)

@@ -1,15 +1,12 @@
 .song {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-
-	overflow: hidden;
 }
 
 .songName {
 	padding-right: 20px;
 	white-space: nowrap;
-	animation: ticker 5s infinite linear;
 }
 
 .ticker {
@@ -20,9 +17,19 @@
 	width: max-content;
 }
 
+.tickerWrapper {
+	display: flex;
+	transform: translateX(0%);
+  animation: ticker 12s linear 0s infinite normal none paused;
+}
+
+.tickerRunning {
+  animation: ticker 12s linear 0s infinite normal none running;
+}
+
 @keyframes ticker {
 	from {
-		transform: translateX(100%);
+		transform: translateX(0%);
 	}
 	to {
 		transform: translateX(-100%);
