@@ -10,21 +10,21 @@
 }
 
 .ticker {
-	display: flex;
 	flex: 1;
 	overflow: hidden;
 	margin-left: 15px;
 	width: max-content;
+	font-size: 15px;
 }
 
 .tickerWrapper {
 	display: flex;
 	transform: translateX(0%);
-  animation: ticker 12s linear 0s infinite normal none paused;
+  animation: ticker 6s linear 0s infinite normal none paused;
 }
 
 .tickerRunning {
-  animation: ticker 12s linear 0s infinite normal none running;
+  animation: ticker 6s linear 0s infinite normal none running;
 }
 
 @keyframes ticker {

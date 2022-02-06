@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { useRef, useState } from 'react'
 import VideoDescription from '../VideoDescription/index'
-import PlayerActions from './PlayerActions'
+import Actions from './Actions'
 import styles from './styles.module.css'
 
 export default function VideoPlayer ({ author, description, albumCover, songName, src }) {
@@ -29,7 +29,7 @@ export default function VideoPlayer ({ author, description, albumCover, songName
         onClick={handlePlay}
       />
       <i className={playerClassName} onClick={handlePlay} />
-      <PlayerActions />
+      <Actions />
       <VideoDescription 
         albumCover={albumCover}
         author={author}

@@ -28,7 +28,7 @@
 
 .actions {
 	position: absolute;
-	bottom: 120px;
+	bottom: 215px;
 	right: 13px;
 }
 
@@ -38,7 +38,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 15px;
+	margin-bottom: 8px;
 	background-color: transparent;
 	border: none;
 }

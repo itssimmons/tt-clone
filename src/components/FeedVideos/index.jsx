@@ -21,7 +21,7 @@ const VIDEOS = [
     comments: 123,
     shares: 23,
     songName: 'sonido original - pablitocastilloo',
-    albumCover: 'https://www.tiktok.com/music/sonido-original-7052814175923784454',
+    albumCover: 'https://p16-amd-va.tiktokcdn.com/img/tos-useast2a-v-2774/09b9bec0272b409d81a082247faafabe~c5_200x200.jpeg',
     src: '../../../assets/video.mp4'
   },
   { 
@@ -32,7 +32,7 @@ const VIDEOS = [
     comments: 123,
     shares: 23,
     songName: 'sonido original - A L E X 🥀',
-    albumCover: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/324ac6057632c99de72b846183df24ca~c5_720x720.jpeg?x-expires=1643918400&x-signature=uw9NOlc9l9%2BBUPWlS1so2vM8JrY%3D',
+    albumCover: 'https://p16-amd-va.tiktokcdn.com/img/tos-useast2a-v-2774/09b9bec0272b409d81a082247faafabe~c5_200x200.jpeg',
     src: '../../../assets/video.mp4'
   }
 ]
