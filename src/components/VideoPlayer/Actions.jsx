@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 import { Heart, Comment, Share } from '../Icons/PlayerIcons'
 
-export default function PlayerActions ({
+export default function Actions ({
   likes = 123,
   comments = 123,
   shares = 123,
