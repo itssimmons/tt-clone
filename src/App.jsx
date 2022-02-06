@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css'
+import './app.css'
 import FeedVideos from './components/FeedVideos'
 import FooterMenu from './components/FooterMenu'
 import Header from './components/Header'
 
 function App () {
   return (
-    <div className='App'>
+    <div className='app'>
       <Header />
       <main>
         <FeedVideos />
