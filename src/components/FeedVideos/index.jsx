@@ -11,7 +11,8 @@ const VIDEOS = [
     shares: 12,
     songName: 'Problemón - Alvaro Diaz & Rauw Alejandro',
     albumCover: 'https://p16-amd-va.tiktokcdn.com/img/tos-useast2a-v-2774/09b9bec0272b409d81a082247faafabe~c5_200x200.jpeg',
-    src: '../../../assets/video.mp4'
+    src: '../../../assets/video.mp4',
+    srcPhoto: 'https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/XA6KIXE6FBFM5EWSA25JI5YAU4.jpg'
   },
   { 
     id: 2,
@@ -22,7 +23,8 @@ const VIDEOS = [
     shares: 23,
     songName: 'sonido original - pablitocastilloo',
     albumCover: 'https://p16-amd-va.tiktokcdn.com/img/tos-useast2a-v-2774/09b9bec0272b409d81a082247faafabe~c5_200x200.jpeg',
-    src: '../../../assets/video.mp4'
+    src: '../../../assets/video.mp4',
+    srcPhoto: 'https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/XA6KIXE6FBFM5EWSA25JI5YAU4.jpg'
   },
   { 
     id: 3,
@@ -33,7 +35,9 @@ const VIDEOS = [
     shares: 23,
     songName: 'sonido original - A L E X 🥀',
     albumCover: 'https://p16-amd-va.tiktokcdn.com/img/tos-useast2a-v-2774/09b9bec0272b409d81a082247faafabe~c5_200x200.jpeg',
-    src: '../../../assets/video.mp4'
+    src: '../../../assets/video.mp4',
+    srcPhoto: 'https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/XA6KIXE6FBFM5EWSA25JI5YAU4.jpg'
+
   }
 ]
 

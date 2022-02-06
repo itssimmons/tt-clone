@@ -4,7 +4,7 @@ import VideoDescription from '../VideoDescription/index'
 import Actions from './Actions'
 import styles from './styles.module.css'
 
-export default function VideoPlayer ({ author, description, albumCover, songName, src }) {
+export default function VideoPlayer ({ author, description, albumCover, songName, src, srcPhoto }) {
   const [playing, setPlaying] = useState(false)
   const video = useRef(null)
 
@@ -29,7 +29,10 @@ export default function VideoPlayer ({ author, description, albumCover, songName
         onClick={handlePlay}
       />
       <i className={playerClassName} onClick={handlePlay} />
-      <Actions />
+      <Actions 
+        author={author}
+        srcPhoto={srcPhoto}
+      />
       <VideoDescription 
         albumCover={albumCover}
         author={author}
